@@ -1,37 +1,28 @@
 # Hugging Face Intro Tutorial
 
-This repository contains a beginner-friendly Google Colab notebook demonstrating how to use [Hugging Face Transformers](https://huggingface.co/transformers/) pipelines for **text, image, and audio** tasks.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shirish-baral/huggingface-intro-tutorial/blob/main/huggingface_basics.ipynb)
 
-## 📌 What you'll learn
-- How to set up and log in to Hugging Face in Colab
-- Running **text generation** with GPT-2
-- Performing **sentiment analysis** with DistilBERT
-- Classifying **images** with Vision Transformer (ViT)
-- Converting **speech to text** with OpenAI Whisper
+This repository contains a beginner-friendly Google Colab notebook that introduces the basics of using the Hugging Face Transformers library.
 
-## 🚀 Getting Started
-1. Open the notebook in Google Colab.
-2. Install dependencies with `pip install`.
-3. Log in to Hugging Face using your access token.
-4. Run the cells step-by-step.
+## What’s Inside
+- How to install and set up Hugging Face in Colab
+- Logging in with your Hugging Face API token
+- Loading a pre-trained model and tokenizer
+- Running text generation
+- Understanding model outputs
 
-## 📂 File
-- `huggingface_basics.ipynb` — Main tutorial notebook.
+## Getting Started
+1. Click the **Open in Colab** button above to launch the notebook.
+2. Follow the step-by-step explanations in the notebook.
+3. Modify and experiment with the code to learn more.
 
-## 🛠 Requirements
-- Python 3
-- Hugging Face account + access token
-- Internet connection (for downloading models from Hugging Face Hub)
+## Requirements
+If running locally:
+- Python 3.8+
+- `transformers`  
+- `torch`  
+- `huggingface_hub`
 
-## 📷 Demo Tasks
-| Task | Model Used | Pipeline |
-|------|------------|----------|
-| Text Generation | `distilgpt2` | `text-generation` |
-| Sentiment Analysis | `distilbert-base-uncased-finetuned-sst-2-english` | `sentiment-analysis` |
-| Image Classification | `google/vit-base-patch16-224` | `image-classification` |
-| Speech-to-Text | `openai/whisper-tiny` | `automatic-speech-recognition` |
-
----
-
-**Author**: Shirish Baral
-**License**: MIT
+Install dependencies:
+```bash
+pip install transformers torch huggingface_hub
